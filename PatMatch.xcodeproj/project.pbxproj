@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B61CD3131D9C0E3700CBE4A3 /* libboost_program_options.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B61CD3121D9C0E3700CBE4A3 /* libboost_program_options.dylib */; };
 		B6EAE9831D9992EC00F17D9D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6EAE9821D9992EC00F17D9D /* main.cpp */; };
+		B6EAE98D1D9999E500F17D9D /* lodepng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6EAE98C1D9999E500F17D9D /* lodepng.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +25,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B61CD3121D9C0E3700CBE4A3 /* libboost_program_options.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_program_options.dylib; path = ../../../../../../usr/local/Cellar/boost/1.61.0_1/lib/libboost_program_options.dylib; sourceTree = "<group>"; };
 		B6EAE97F1D9992EC00F17D9D /* PatMatch */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PatMatch; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6EAE9821D9992EC00F17D9D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B6EAE98C1D9999E500F17D9D /* lodepng.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lodepng.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B61CD3131D9C0E3700CBE4A3 /* libboost_program_options.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +62,8 @@
 		B6EAE9811D9992EC00F17D9D /* PatMatch */ = {
 			isa = PBXGroup;
 			children = (
+				B61CD3121D9C0E3700CBE4A3 /* libboost_program_options.dylib */,
+				B6EAE98C1D9999E500F17D9D /* lodepng.cpp */,
 				B6EAE9821D9992EC00F17D9D /* main.cpp */,
 			);
 			path = PatMatch;
@@ -120,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6EAE9831D9992EC00F17D9D /* main.cpp in Sources */,
+				B6EAE98D1D9999E500F17D9D /* lodepng.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +224,8 @@
 		B6EAE9871D9992ED00F17D9D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/boost/1.61.0_1/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/boost/1.61.0_1/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -223,6 +233,8 @@
 		B6EAE9881D9992ED00F17D9D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/boost/1.61.0_1/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/boost/1.61.0_1/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -246,6 +258,7 @@
 				B6EAE9881D9992ED00F17D9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
